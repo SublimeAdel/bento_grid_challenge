@@ -9,6 +9,10 @@ This is a solution to the Bento grid challenge on Frontend Mentor
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Links](#links)
+  - [Implementation](#implementations)
+    - [Desktop](#desktop)
+    - [Tablet](#tablet)
+    - [Mobile](#mobile)
 
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
@@ -27,8 +31,16 @@ Users should be able to:
 
 - Live Site URL: [Netlify live site URL here](https://sublimebentogridchallenge.netlify.app/)
 
+
 <hr>
 
+## Implementations
 
-### Mobile Design
-![](./mobile-design.jpg)
+  ### Desktop
+  ![](./screencapture-desktop.png)
+
+  ### Tablet
+  ![](./screencapture-tablet.png)
+
+  ### Mobile
+  ![](./screencapture-mobile.png)
