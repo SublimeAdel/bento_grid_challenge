@@ -1,0 +1,85 @@
+/* Sublime CSS Reset */
+
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove Default Margin and Padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5; /* Accessible line-height */
+  -webkit-font-smoothing: antialiased; /* Improve text rendering */
+  text-rendering: optimizeSpeed; /* Optimize rendering */
+}
+
+/* Typography */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word; /* Prevent text overflows */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance; /* Balance text wrapping on headings */
+  line-height: 1.1;  /* Shorter line heights for headings */
+}
+
+p {
+  text-wrap: pretty; /* Improve line wrapping */
+}
+
+/* Media Elements */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto; /* Enhance underline */
+  text-decoration: none; /* Remove default text decoration */
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+
+/* Form Elements */
+input, button, textarea, select {
+  font: inherit; /* Inherit font styles */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.5; /* Consistent line height */
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
