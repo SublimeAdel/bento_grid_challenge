@@ -258,7 +258,17 @@ background-image: linear-gradient(to top, #ffffff, #fefefe, #fdfdfd, #FAF8FB , #
         grid-row: 1/span 2;
     }
     .hero img{
+        transition: all 0.2s ease-in-out;
         width: 40%;
+    }
+    .hero:hover img{
+        transform: scale(1.2);
+    }
+    .hero span{
+        transition: all 0.2s ease-in-out;
+    }
+    .hero:hover span{
+        font-weight: var(--fw-700);
     }
     .hero p{
         padding: 0.7rem;
@@ -285,6 +295,11 @@ background-image: linear-gradient(to top, #ffffff, #fefefe, #fdfdfd, #FAF8FB , #
         width: 100%;
         max-width: 300px;
         min-width: 210px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .ai-content:hover img{
+        transform: scale(1.1);
     }
 
     .consistent-schedule{
@@ -297,6 +312,12 @@ background-image: linear-gradient(to top, #ffffff, #fefefe, #fdfdfd, #FAF8FB , #
         top: 2rem;
         max-width: 280px;
         padding: 0;
+        transition: all 0.3s ease-in-out;
+
+    }
+    .consistent-schedule img:hover{
+        transform: scale(1.1);
+        top: -3rem;
     }
     .consistent-schedule h3{
     padding: 1em 1em 0 0em;
@@ -325,8 +346,13 @@ background-image: linear-gradient(to top, #ffffff, #fefefe, #fdfdfd, #FAF8FB , #
         position: relative;
         padding: 0;
         left: 90px;
-        max-width: 22rem;   
- }
+        max-width: 22rem;  
+        transition: all 0.3s ease-in-out; 
+    }
+    .schedule-social-media img:hover{
+        transform: scale(0.7);
+        left: 0px;
+    }
     .schedule-social-media p{
         font-weight: var(--fw-500);
         padding: 0;
@@ -346,10 +372,14 @@ background-image: linear-gradient(to top, #ffffff, #fefefe, #fdfdfd, #FAF8FB , #
     .grow-followers img{
         width: 53%;
         padding: 0 1em;
+        transition: all 0.3s ease-in-out;
         max-width: 300px;
     }
     .grow-followers h3{
         padding: 1.5em 0;
+    }
+    .grow-followers:hover img{
+        transform: scale(1.2);
     }
 
 
@@ -364,7 +394,11 @@ background-image: linear-gradient(to top, #ffffff, #fefefe, #fdfdfd, #FAF8FB , #
     }
     .faster-growth img{
         width: 100%;
+        transition: all 0.1s;
         padding: 0;
+    }
+    .faster-growth img:hover{
+        transform: scale(1.2);
     }
 
 
