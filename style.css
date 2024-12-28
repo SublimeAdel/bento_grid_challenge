@@ -457,6 +457,7 @@ p {
     .ai-content {
         grid-column: 2;
         grid-row: 11/span 4;
+        justify-content: space-evenly;
         gap: 3rem;
     }
 
@@ -485,8 +486,7 @@ p {
     .schedule-social-media {
         grid-column: 1;
         grid-row: 11/span 4;
-        gap: 3rem;
-
+        justify-content: space-around;
     }
 
     .schedule-social-media img {
