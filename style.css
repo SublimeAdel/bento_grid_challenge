@@ -79,7 +79,6 @@ p {
 /* containers */
 .container {
     background-color: var(--clr-bg);
-    display: grid;
     place-items: center;
     max-width: 100%;
     margin-inline: auto;
@@ -88,7 +87,7 @@ p {
 
 .grid {
     display: grid;
-    grid-auto-columns: minmax(auto, 24rem);
+    grid-auto-columns: minmax(300px, 350px);
     gap: 2rem;
 }
 
@@ -98,7 +97,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 3%;
+    border-radius: 10px;
     overflow: hidden;
     background-color: var(--clr-primary-100);
     transition: all 0.3s ease-in-out;
@@ -240,7 +239,7 @@ p {
 
 
 
-@media (min-width: 475px) {
+@media (min-width: 575px) {
     :root {
         --fs-p: 1.16rem;
         --fs-h3: 2.2rem;
@@ -249,10 +248,13 @@ p {
     }
 
     .grid {
+        position: relative;
+        top: -9.5rem;
+        transform: scale(0.75);
         max-height: 100%;
         max-width: 1100px;
-        grid-template-columns: repeat(4, minmax(225px, 1fr));
-        grid-template-rows: repeat(8, minmax(100px, 8rem));
+        grid-template-columns: repeat(4, 251px);
+        grid-template-rows: repeat(8, 8rem);
     }
 
 
@@ -294,8 +296,7 @@ p {
 
     .ai-content {
         grid-column: 1;
-        justify-content: start;
-        gap: 1rem;
+        justify-content: space-between;
         grid-row: 4/span 3;
     }
 
@@ -428,11 +429,13 @@ p {
 
 }
 
-@media (min-width: 475px) and (max-width: 799px) {
+@media (min-width: 575px) and (max-width: 840px) {
     .grid {
+        transform: scale(1);
+        top: 0;
         max-height: 100%;
         max-width: 700px;
-        grid-template-columns: repeat(2, minmax(225px, 1fr));
+        grid-template-columns: repeat(2, 325px);
         grid-auto-rows: minmax(100px, 8rem);
     }
 
